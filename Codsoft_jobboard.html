@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Home Page -->
+    <header>
+        <h1>Welcome to JobFinder</h1>
+        <p>Your gateway to your next career opportunity</p>
+        <section id="featured-jobs"></section>
+    </header>
+
+    <!-- Job Listings Page -->
+    <main id="job-listings">
+        <h2>Job Listings</h2>
+        <div id="job-container"></div>
+    </main>
+
+    <!-- Employer Dashboard -->
+    <section id="employer-dashboard">
+        <h2>Employer Dashboard</h2>
+        <button id="post-job">Post a Job</button>
+    </section>
+
+    <!-- Candidate Dashboard -->
+    <section id="candidate-dashboard">
+        <h2>Candidate Dashboard</h2>
+        <p>Manage your profile and applications</p>
+    </section>
+
+    <!-- Job Application Process -->
+    <form id="application-form" style="display: none;">
+        <h3>Apply for Job</h3>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="file" id="resume-upload" required />
+        <button type="submit">Submit Application</button>
+    </form>
+    <!-- Search and Filter Section -->
+    <section id="search-filter">
+        <input type="text" id="search-bar" placeholder="Search jobs by title..." />
+        <select id="filter-location">
+            <option value="">Filter by Location</option>
+            <option value="Remote">Remote</option>
+            <option value="New York">New York</option>
+        </select>
+        <button id="search-btn">Search</button>
+    </section>
+    <!-- Saved Jobs Section -->
+    <section id="saved-jobs">
+        <h2>Saved Jobs</h2>
+        <div id="saved-container"></div>
+    </section>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
